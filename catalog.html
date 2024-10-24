@@ -43,7 +43,99 @@
   </header>
 
   <main class="catalog-main">
+    <h1 class="catalog-main-title">Каталог</h1>
 
+    <ul class="breadscrumbs">
+      <li class="breadscrumbs-item">
+        <a class="breadscrumbs-link" href="index.html">Главная</a>
+      </li>
+      <li class="breadscrumbs-item">
+        <a class="breadscrumbs-link">Каталог</a>
+      </li>
+    </ul>
+
+    <form class="filters-form" action="https://echo.htmlacademy.ru" method="post">
+      <fieldset class="filter-group">
+        <legend class="filter-group-title">Цена</legend>
+
+        <div class="range-bar">
+          <div class="range-bar-control">
+            <button class="range-toggle toggle-min" type="button">
+              <span class="visually-hidden">Изменить минимальную цену</span>
+            </button>
+            <button class="range-toggle toggle-max" type="button">
+              <span class="visually-hidden">Изменить максимальную цену</span>
+            </button>
+          </div>
+
+          <div class="price-fields-container">
+            <label class="price-field-label">от
+              <input class="price-field" type="number" name="min-price" value="50" min="0" step="50"> ₽
+            </label>
+            <label class="price-field-label">до
+              <input class="price-field" type="number" name="max-price" value="1500" min="50" step="50"> ₽
+            </label>
+          </div>
+        </div>
+      </fieldset>
+
+      <fieldset class="filter-group">
+        <legend class="filter-group-title">Производители</legend>
+
+        <label class="control-group">
+          <input class="control" type="checkbox" name="brend" value="bed head for men">
+          <span class="control-mark"></span>
+          <span class="control-label">Bed Head for Men</span>
+        </label>
+        <label class="control-group">
+          <input class="control" type="checkbox" name="brend" value="homme deep cleansing cool" checked>
+          <span class="control-mark"></span>
+          <span class="control-label">Homme Deep Cleansing Cool</span>
+        </label>
+        <label class="control-group">
+          <input class="control" type="checkbox" name="brend" value="so intense" checked>
+          <span class="control-mark"></span>
+          <span class="control-label">So Intense</span>
+        </label>
+        <label class="control-group">
+          <input class="control" type="checkbox" name="brend" value="sprekenhus">
+          <span class="control-mark"></span>
+          <span class="control-label">Sprekenhus</span>
+        </label>
+        <label class="control-group">
+          <input class="control" type="checkbox" name="brend" value="firm storе">
+          <span class="control-mark"></span>
+          <span class="control-label">Firm Storе</span>
+        </label>
+        <label class="control-group">
+          <input class="control" type="checkbox" name="brend" value="winter body" checked>
+          <span class="control-mark"></span>
+          <span class="control-label">Winter Body</span>
+        </label>
+      </fieldset>
+
+      <fieldset class="filter-group">
+        <legend class="filter-group-title">Группы товаров</legend>
+
+        <label class="control-group">
+          <input class="control" type="radio" name="product" value="shaving supplies">
+          <span class="control-mark"></span>
+          <span class="control-label">Бритвенные принадлежности</span>
+        </label>
+        <label class="control-group">
+          <input class="control" type="radio" name="product" value="care products">
+          <span class="control-mark"></span>
+          <span class="control-label">Средства для ухода</span>
+        </label>
+        <label class="control-group">
+          <input class="control" type="radio" name="product" value="accessories">
+          <span class="control-mark"></span>
+          <span class="control-label">Аксессуары</span>
+        </label>
+      </fieldset>
+
+      <button class="button" type="submit">Показать</button>
+    </form>
   </main>
 
   <footer class="page-footer">
