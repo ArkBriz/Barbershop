@@ -29,3 +29,25 @@
   src: url("/fonts/ptsansnarrow-700.woff2") format("woff2");
   font-display: swap;
 }
+
+img {
+  max-width: 100%;
+  object-fit: contain;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:root {
+  --basic-extra-dark: #242424;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--basic-extra-dark);
+}
