@@ -11,39 +11,42 @@
     <header class="page-header">
       <h1 class="visually-hidden">Сайт Барбершопа «Бородинского»</h1>
 
-      <h2 class="visually-hidden">Навигация по сайту</h2>
-      <ul class="header-nav-list">
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="#">О нас</a>
-        </li>
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="catalog.html">Каталог</a>
-        </li>
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="#">Частые вопросы</a>
-        </li>
-      </ul>
+      <nav class="nav">
+        <h2 class="visually-hidden">Навигация по сайту</h2>
 
-      <ul class="header-nav-list user-nav">
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="#">
-            <span class="visually-hidden">Поиск</span>
-          </a>
-        </li>
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="#">
-            <span class="visually-hidden">Корзина</span>
-          </a>
-        </li>
-        <li class="header-nav-item">
-          <a class="header-nav-link" href="#">Вход</a>
-        </li>
-      </ul>
+        <ul class="nav-list">
+          <li class="nav-item">
+            <a class="nav-link" href="#">О нас</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="catalog.html">Каталог</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Частые вопросы</a>
+          </li>
+        </ul>
+
+        <ul class="nav-list user-nav">
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="visually-hidden">Поиск</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">
+              <span class="visually-hidden">Корзина</span>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Вход</a>
+          </li>
+        </ul>
+      </nav>
     </header>
 
 
     <main class="index-main">
-      <div class="main-wrapper">
+      <div class="page-container">
         <section class="advantages">
           <h2 class="visually-hidden">Наши преимущества</h2>
 
@@ -179,52 +182,54 @@
 
 
     <footer class="footer">
-      <section class="footer-contacts">
-        <h2 class="visually-hidden">Наши контакты</h2>
-        <img class="footer-logo" src="/images/logo-dark.svg" width="184" height="21" alt="Логотип Барбершопа «Бородинского»">
+      <div class="footer-container">
+        <section class="footer-contacts">
+          <h2 class="visually-hidden">Наши контакты</h2>
+          <img class="footer-logo" src="/images/logo-dark.svg" width="184" height="21" alt="Логотип Барбершопа «Бородинского»">
 
-        <address class="footer-address">
-          <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
-          <a href="tel:+78005558628">+7 800 555-86-28</a>
-        </address>
+          <address class="footer-address">
+            <p>Санкт-Петербург, набережная реки Карповки, 5, литера П.</p>
+            <a href="tel:+78005558628">+7 800 555-86-28</a>
+          </address>
 
-        <a class="footer-map" href="#" target="_blank">Как нас найти?</a>
-      </section>
+          <a class="footer-map" href="#" target="_blank">Как нас найти?</a>
+        </section>
 
-      <section class="subscribe">
-        <h2 class="visually-hidden">Подписка</h2>
-        <p class="subscribe-title">Получайте лучшие предложения</p>
+        <section class="subscribe">
+          <h2 class="visually-hidden">Подписка</h2>
+          <p class="footer-title">Получайте лучшие предложения</p>
 
-        <form class="subscribe-form" action="https://echo.htmlacademy.ru">
-          <label class="visually-hidden" for="email">Введите ваш email</label>
-          <input class="field" type="email" id="email" name="email" placeholder="email@htmlacademy.ru" required>
+          <form class="subscribe-form" action="https://echo.htmlacademy.ru">
+            <label class="visually-hidden" for="email">Введите ваш email</label>
+            <input class="field" type="email" id="email" name="email" placeholder="email@htmlacademy.ru" required>
 
-          <button class="button subscribe-button" type="submit">
-            <span class="visually-hidden">Подписаться на предложения</span>
-          </button>
-        </form>
-      </section>
+            <button class="button subscribe-button" type="submit">
+              <span class="visually-hidden">Подписаться на предложения</span>
+            </button>
+          </form>
+        </section>
 
-      <section class="socials">
-        <h2 class="visually-hidden">Социальные сети</h2>
-        <p class="socials-title">Давайте дружить</p>
+        <section class="socials">
+          <h2 class="visually-hidden">Социальные сети</h2>
+          <p class="footer-title">Давайте дружить</p>
 
-        <div class="socials-buttons">
-          <a class="button button-tw" href="#" target="_blank">
-            <span class="visually-hidden">Твиттер</span>
-          </a>
-          <a class="button button-vk" href="#" target="_blank">
-            <span class="visually-hidden">Вконтакте</span>
-          </a>
-          <a class="button button-insta" href="#" target="_blank">
-            <span class="visually-hidden">Инстаграм</span>
-          </a>
-        </div>
+          <div class="socials-buttons">
+            <a class="button button-tw" href="#" target="_blank">
+              <span class="visually-hidden">Твиттер</span>
+            </a>
+            <a class="button button-vk" href="#" target="_blank">
+              <span class="visually-hidden">Вконтакте</span>
+            </a>
+            <a class="button button-insta" href="#" target="_blank">
+              <span class="visually-hidden">Инстаграм</span>
+            </a>
+          </div>
 
-        <p class="copy">Сделано в
-          <a href="#">.html academy</a>
-        </p>
-      </section>
+          <p class="copy">Сделано в
+            <a href="#">.html academy</a>
+          </p>
+        </section>
+      </div>
     </footer>
   </body>
 </html>
