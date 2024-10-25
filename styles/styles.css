@@ -43,9 +43,12 @@ img {
 
 :root {
   --basic-white: #ffffff;
-  --basic-dark: #000000;
+  --basic-black: #000000;
+  --basic-extra-light: #f6f6f6;
+  --basic-dark: #595959;
   --basic-extra-dark: #242424;
   --special-neutral: #af7842;
+  --special-dark: #814B18;
 }
 
 body {
@@ -56,7 +59,7 @@ body {
   font-size: 16px;
   line-height: 150%;
   font-weight: 400;
-  background-color: var(--basic-dark);
+  background-color: var(--basic-black);
   color: var(--basic-white);
 }
 
@@ -103,7 +106,7 @@ body {
 /* Main */
 
 .index-main {
-  background-color: var(--basic-dark);
+  background-color: var(--basic-black);
   background-image: url("/images/backgrounds/background-image.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
@@ -204,6 +207,97 @@ body {
 .appointment-label {
   line-height: 140%;
   text-transform: uppercase;
+}
+
+
+
+/* Catalog */
+
+.catalog-main {
+  background-color: var(--basic-extra-light);
+  background-image: url(/images/backgrounds/bg-noise-light.jpg);
+  font-weight: 700;
+  color: var(--basic-extra-dark);
+}
+
+.catalog-main-header,
+.catalog-main-container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+.catalog-main-title {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 32px;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+
+.breadscrumbs {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.breadscrumbs-link {
+  line-height: 140%;
+  font-weight: 400;
+  color: inherit;
+}
+
+.breadscrumbs-link-current {
+  color: var(--basic-dark);
+}
+
+/* Filters */
+
+.filter-group-title {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
+  text-transform: uppercase;
+}
+
+.price-fields-container {
+  font-weight: 400;
+}
+
+.control-group {
+  line-height: 140%;
+}
+
+/* Sorting */
+
+
+/* Cards */
+
+.cards-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.card-title {
+  font-size: inherit;
+}
+
+.card-price {
+  font-family: "PT Sans Narrow", sans-serif;
+  font-size: 24px;
+  line-height: 120%;
+  color: var(--special-dark);
+}
+
+/* Pagination */
+
+.pag-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.pag-item .button {
+  text-decoration: none;
 }
 
 
