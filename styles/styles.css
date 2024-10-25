@@ -51,8 +51,15 @@ img {
   --special-dark: #814B18;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   min-width: 1020px;
+  min-height: 100%;
+  display: flex;
+  flex-direction: column;
   margin: 0;
 
   font-family: "PT Sans", sans-serif;
@@ -61,6 +68,10 @@ body {
   font-weight: 400;
   background-color: var(--basic-black);
   color: var(--basic-white);
+}
+
+.main-container {
+  flex-grow: 1;
 }
 
 .visually-hidden {
