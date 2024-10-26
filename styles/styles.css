@@ -104,9 +104,16 @@ body {
 }
 
 .nav-list {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 410px;
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.nav-list:not(.user-nav) {
+  margin-right: 20px;
 }
 
 .nav .logo {
@@ -114,12 +121,13 @@ body {
 }
 
 .user-nav {
-  max-width: 330px;
+  max-width: 270px;
   margin-left: auto;
 }
 
 .nav-link {
   display: block;
+  padding: 24px 20px;
   color: inherit;
   text-decoration: none;
 }
@@ -128,9 +136,6 @@ body {
   min-width: 56px;
   height: 70px;
   padding: 27px 20px;
-
-  outline: 1px solid white;
-  outline-offset: -1px;
 }
 
 
