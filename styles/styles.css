@@ -82,6 +82,7 @@ body {
 
   font-family: "PT Sans" ,sans-serif;
   font-size: 16px;
+  line-height: 100%;
   font-weight: 700;
   color: var(--basic-white);
   text-align: center;
@@ -114,6 +115,7 @@ body {
 
 .nav {
   display: flex;
+  align-items: center;
   width: 940px;
   margin: 0 auto;
 }
@@ -428,13 +430,6 @@ body {
   margin-bottom: 32px;
 }
 
-.catalog-main-container {
-  display: flex;
-  width: 940px;
-  margin: 0 auto;
-  margin-bottom: 60px;
-}
-
 .catalog-main-title {
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 32px;
@@ -443,9 +438,14 @@ body {
 }
 
 .breadscrumbs {
+  display: flex;
   margin: 0;
   padding: 0;
   list-style-type: none;
+}
+
+.breadscrumbs-item {
+  margin-right: 32px;
 }
 
 .breadscrumbs-link {
@@ -458,6 +458,14 @@ body {
   color: var(--basic-dark);
 }
 
+
+.catalog-main-container {
+  display: flex;
+  width: 940px;
+  margin: 0 auto;
+  margin-bottom: 60px;
+}
+
 /* Filters */
 
 .filters-form {
@@ -465,7 +473,17 @@ body {
   margin-right: 20px;
 }
 
+.filter-group {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 40px;
+  padding: 0;
+  border: none;
+}
+
 .filter-group-title {
+  margin-bottom: 22px;
+
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 20px;
   line-height: 140%;
@@ -473,18 +491,63 @@ body {
 }
 
 .price-fields-container {
+  display: flex;
   font-weight: 400;
 }
 
+.price-field {
+  max-width: 50px;
+}
+
 .control-group {
+  margin-bottom: 16px;
+  padding-left: 36px;
+
   line-height: 140%;
+}
+
+.control {
+  display: none;
 }
 
 /* Sorting */
 
 .sorting-container {
+  display: flex;
+  justify-content: space-between;
   margin-bottom: 16px;
+  padding: 16px;
+
   background-color: var(--basic-white);
+}
+
+.sorting-select {
+  width: 260px;
+  padding: 10px 16px;
+  padding-right: 32px;
+
+  font-size: 16px;
+  line-height: 150%;
+  font-weight: 700;
+  appearance: none;
+}
+
+.view-buttons-container {
+  display: flex;
+  max-width: 400px;
+}
+
+.view-button {
+  display: block;
+  width: 56px;
+  height: 44px;
+  padding: 14px 20px;
+
+  outline: 1px solid black;
+}
+
+.view-button-current {
+  background-color: var(--basic-black);
 }
 
 /* Cards */
