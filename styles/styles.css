@@ -519,6 +519,7 @@ body {
   padding: 16px;
 
   background-color: var(--basic-white);
+  box-shadow: 0 4px 8px rgb(79, 70, 60, 0.16);
 }
 
 .sorting-select {
@@ -575,6 +576,7 @@ body {
   padding-bottom: 16px;
 
   background-color: var(--basic-white);
+  box-shadow: 0 4px 8px rgb(79, 70, 60, 0.16);
 }
 
 .card-img {
@@ -612,18 +614,52 @@ body {
 /* Pagination */
 
 .pag-container {
+  display: flex;
+  justify-content: space-between;
+  padding: 16px;
+  padding-bottom: 8px;
+  align-items: flex-start;
+
   background-color: var(--basic-white);
+  box-shadow: 0 4px 8px rgb(79, 70, 60, 0.16);
 }
 
 .pag-list {
+  display: flex;
+  flex-wrap: wrap;
   margin: 0;
+  margin-right: 10px;
   padding: 0;
   list-style-type: none;
 }
 
+.pag-item {
+  margin-right: 8px;
+  margin-bottom: 8px;
+
+  line-height: 100%;
+}
+
 .pag-item .button {
+  display: block;
+  min-width: 50px;
+  min-height: 44px;
   text-decoration: none;
 }
+
+.pag-item .button-prev {
+  min-width: 56px;
+}
+
+.pag-item .button-next {
+  min-width: 56px;
+}
+
+.show-more-button {
+  min-width: 155px;
+}
+
+
 
 
 /* Footer */
