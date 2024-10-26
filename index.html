@@ -125,26 +125,34 @@
 
           <section class="gallery">
             <h2 class="section-title">Фотогалерея</h2>
-            <img src="/images/example-photo.jpg" width="390" height="250" alt="Примеры работы">
+
+            <div class="img-container">
+              <img src="/images/example-photo.jpg" width="390" height="250" alt="Примеры работы">
+
+              <div class="slider-buttons-container">
+                <button class="slider-button slider-button-prev"></button>
+                <button class="slider-button slider-button-next"></button>
+              </div>
+            </div>
 
             <ol class="gallery-pag">
               <li class="gallery-pag-item">
-                <button type="button">
+                <button class="pag-button pag-button-current" type="button">
                   <span class="visually-hidden">Первое фото</span>
                 </button>
               </li>
               <li class="gallery-pag-item">
-                <button type="button">
+                <button class="pag-button" type="button">
                   <span class="visually-hidden">Второе фото</span>
                 </button>
               </li>
               <li class="gallery-pag-item">
-                <button type="button">
+                <button class="pag-button" type="button">
                   <span class="visually-hidden">Третье фото</span>
                 </button>
               </li>
               <li class="gallery-pag-item">
-                <button type="button">
+                <button class="pag-button" type="button">
                   <span class="visually-hidden">Четвертое фото</span>
                 </button>
               </li>
