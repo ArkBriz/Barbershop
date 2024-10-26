@@ -74,6 +74,21 @@ body {
   flex-grow: 1;
 }
 
+.button {
+  display: inline-block;
+  padding: 14px 20px;
+  background-color: var(--basic-black);
+  border: none;
+
+  font-family: "PT Sans" ,sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--basic-white);
+  text-align: center;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
 .visually-hidden {
   position: absolute;
   width: 1px;
@@ -214,6 +229,9 @@ body {
 }
 
 .section-title {
+  margin: 0;
+  margin-bottom: 28px;
+
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 32px;
   line-height: 110%;
@@ -222,13 +240,29 @@ body {
 
 .services-list {
   margin: 0;
+  margin-bottom: 30px;
   padding: 0;
   list-style-type: none;
+}
+
+.services-item:not(:last-child) {
+  margin-bottom: 22px;
+}
+
+.service-name {
+  font-size: 20px;
+  line-height: 140%;
 }
 
 .service-price {
   color: var(--special-neutral);
 }
+
+.button-all {
+  padding-right: 44px;
+}
+
+
 
 /* Gallery */
 
