@@ -827,9 +827,20 @@ body {
 }
 
 .socials-buttons .button {
+  position: relative;
   width: 56px;
   height: 44px;
   padding: 14px 20px;
+  line-height: 16px;
+}
+
+.socials-buttons svg {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto;
 }
 
 .copy {
