@@ -47,6 +47,7 @@ img {
   --basic-extra-light: #f6f6f6;
   --basic-dark: #595959;
   --basic-extra-dark: #242424;
+  --basic-neutral: #bdbdbd;
   --special-neutral: #af7842;
   --special-dark: #814B18;
 }
@@ -64,7 +65,6 @@ body {
 
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
-  line-height: 150%;
   font-weight: 400;
   background-color: var(--basic-black);
   color: var(--basic-white);
@@ -115,7 +115,6 @@ body {
 
 .nav {
   display: flex;
-  align-items: center;
   width: 940px;
   margin: 0 auto;
 }
@@ -143,6 +142,7 @@ body {
 }
 
 .nav-link {
+  position: relative;
   display: block;
   padding: 24px 20px;
   color: inherit;
@@ -150,9 +150,29 @@ body {
 }
 
 .user-nav .nav-link {
-  min-width: 56px;
-  height: 70px;
   padding: 27px 20px;
+  min-width: 16px;
+  min-height: 16px;
+  line-height: 16px;
+}
+
+.user-nav .login-link {
+  padding-left: 38px;
+}
+
+.navigation-icon {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+}
+
+.login-link .navigation-icon {
+  left: 14px;
+  right: 0;
+  margin: auto 0;
 }
 
 
@@ -409,7 +429,7 @@ body {
   font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 150%;
-  color: #bdbdbd;
+  color: var(--basic-neutral);
 }
 
 
@@ -658,8 +678,6 @@ body {
 .show-more-button {
   min-width: 155px;
 }
-
-
 
 
 /* Footer */
