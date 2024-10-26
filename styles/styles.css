@@ -582,6 +582,15 @@ body {
   text-transform: uppercase;
 }
 
+.subscribe-form {
+  display: grid;
+  grid-template-columns: 1fr auto;
+}
+
+.subscribe-button {
+  min-width: 56px;
+}
+
 /* Socials */
 
 .socials {
@@ -589,14 +598,16 @@ body {
   margin-left: auto;
 }
 
+.socials-buttons {
+  display: grid;
+  grid-template-columns: repeat(3, auto);
+  gap: 8px;
+}
+
 .socials-buttons .button {
-  display: inline-block;
   width: 56px;
   height: 44px;
   padding: 14px 20px;
-
-  outline: 1px solid white;
-  outline-offset: -1px;
 }
 
 .copy {
