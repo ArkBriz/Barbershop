@@ -225,6 +225,8 @@ body {
 .services {
   width: 390px;
   font-family: "PT Sans Narrow", sans-serif;
+  font-size: 20px;
+  line-height: 140%;
   text-transform: uppercase;
 }
 
@@ -249,17 +251,14 @@ body {
   margin-bottom: 22px;
 }
 
-.service-name {
-  font-size: 20px;
-  line-height: 140%;
-}
-
 .service-price {
   color: var(--special-neutral);
 }
 
 .button-all {
   padding-right: 44px;
+
+  line-height: 100%;
 }
 
 
@@ -269,6 +268,30 @@ body {
 .gallery {
   width: 390px;
 }
+
+.gallery .section-title {
+  margin-bottom: 20px;
+}
+
+.gallery img {
+  display: block;
+  margin-bottom: 16px;
+}
+
+.gallery-pag {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.gallery-pag-item {
+  margin-right: 8px;
+  line-height: 1px;
+}
+
 
 /* Contacts */
 
