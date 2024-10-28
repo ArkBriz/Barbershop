@@ -47,12 +47,12 @@ img {
   --basic-light: #e7e7e7;
   --basic-extra-light: #f6f6f6;
   --basic-dark: #595959;
-  --special-light: #DBB590;
-  --special-dark: #814B18;
+  --special-light: #dbb590;
+  --special-dark: #814b18;
   --basic-extra-dark: #242424;
   --basic-neutral: #bdbdbd;
   --special-neutral: #af7842;
-  --status-error: #EA5454;
+  --status-error: #ea5454;
 }
 
 html {
@@ -84,7 +84,7 @@ body {
   background-color: var(--basic-black);
   border: none;
 
-  font-family: "PT Sans" ,sans-serif;
+  font-family: "PT Sans", sans-serif;
   font-size: 16px;
   line-height: 100%;
   font-weight: 700;
@@ -110,7 +110,7 @@ body {
 
 .button:focus {
   background-color: var(--special-dark);
-  outline: 2px solid #DBB590;
+  outline: 2px solid #dbb590;
 }
 
 .button-light:focus {
@@ -132,7 +132,7 @@ body {
   padding: 0;
   border: 0;
   white-space: nowrap;
-  clip:rect(0 0 0 0);
+  clip: rect(0 0 0 0);
   clip-path: inset(100%);
   overflow: hidden;
 }
@@ -277,7 +277,7 @@ body {
   padding-left: 44px;
 
   background-color: var(--basic-white);
-  background-image: url(/images/icons/cart.svg);
+  background-image: url("/images/icons/cart.svg");
   background-repeat: no-repeat;
   background-position: center left 20px;
   border: none;
@@ -334,7 +334,7 @@ body {
   width: 56px;
   height: 44px;
 
-  background-image: url(/images/icons/trash.svg);
+  background-image: url("/images/icons/trash.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -425,7 +425,7 @@ body {
   padding: 40px;
 
   background-color: var(--basic-white);
-  background-image: url(/images/backgrounds/bg-noise-light.jpg);
+  background-image: url("/images/backgrounds/bg-noise-light.jpg");
 
   font-weight: 700;
   color: var(--basic-extra-dark);
@@ -454,6 +454,7 @@ body {
   line-height: 140%;
   text-transform: uppercase;
 }
+
 .services-item {
   display: flex;
   justify-content: space-between;
@@ -497,7 +498,7 @@ body {
 
 .button-all {
   padding-right: 44px;
-  background-image: url(/images/icons/arrow-right.svg);
+  background-image: url("/images/icons/arrow-right.svg");
   background-repeat: no-repeat;
   background-position: center right 20px;
 
@@ -543,13 +544,13 @@ body {
 }
 
 .slider-button-prev {
-  background-image: url(/images/icons/arrow-left.svg);
+  background-image: url("/images/icons/arrow-left.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .slider-button-next {
-  background-image: url(/images/icons/arrow-right.svg);
+  background-image: url("/images/icons/arrow-right.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -707,7 +708,7 @@ body {
 }
 
 .info-icon:focus {
-  outline: 2px solid #DBB590;
+  outline: 2px solid #dbb590;
 }
 
 .info-icon:hover svg {
@@ -717,7 +718,7 @@ body {
 .info-icon::before {
   display: none;
   position: absolute;
-  content: "Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони";
+  content: "Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони";
   top: -50%;
   transform: translateX(-50%) translateY(-100%);
 
@@ -767,7 +768,7 @@ body {
 
 .field:focus {
   border-color: var(--special-neutral);
-  outline: 2px solid #DBB590;
+  outline: 2px solid #dbb590;
 }
 
 .field:disabled,
@@ -782,7 +783,7 @@ body {
 .catalog-main {
   padding-top: 40px;
   background-color: var(--basic-extra-light);
-  background-image: url(/images/backgrounds/bg-noise-light.jpg);
+  background-image: url("/images/backgrounds/bg-noise-light.jpg");
   font-weight: 700;
   color: var(--basic-extra-dark);
 }
@@ -886,7 +887,7 @@ body {
 }
 
 .toggle-min {
-left: -10px;
+  left: -10px;
 }
 
 .toggle-max {
@@ -986,7 +987,7 @@ left: -10px;
 
 /* Radiobuttons */
 
-.control[type="radio"] +.control-mark {
+.control[type="radio"] + .control-mark {
   position: absolute;
   left: 0;
   right: auto;
@@ -1041,7 +1042,7 @@ left: -10px;
   padding-right: 32px;
   border: 2px solid #242424;
 
-  background-image: url(/images/icons/arrow-down.svg);
+  background-image: url("/images/icons/arrow-down.svg");
   background-repeat: no-repeat;
   background-position: center right 16px;
 
@@ -1058,7 +1059,7 @@ left: -10px;
 
 .sorting-select:focus {
   border-color: var(--special-neutral);
-  outline: 2px solid #DBB590;
+  outline: 2px solid #dbb590;
 }
 
 .view-buttons-container {
@@ -1197,14 +1198,14 @@ left: -10px;
 
 .pag-item .button-prev {
   min-width: 56px;
-  background-image: url(/images/icons/arrow-left.svg);
+  background-image: url("/images/icons/arrow-left.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
 
 .pag-item .button-next {
   min-width: 56px;
-  background-image: url(/images/icons/arrow-right.svg);
+  background-image: url("/images/icons/arrow-right.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1271,7 +1272,7 @@ left: -10px;
 
 .subscribe-button {
   min-width: 56px;
-  background-image: url(/images/icons/arrow-tail.svg);
+  background-image: url("/images/icons/arrow-tail.svg");
   background-repeat: no-repeat;
   background-position: center;
 }
@@ -1348,7 +1349,7 @@ left: -10px;
   margin: 0;
   margin-bottom: 24px;
 
-  font-family: "PT Sans Narrow" ,sans-serif;
+  font-family: "PT Sans Narrow", sans-serif;
   font-size: 32px;
   line-height: 110%;
   text-transform: uppercase;
@@ -1364,7 +1365,7 @@ left: -10px;
   padding: 14px 20px;
 
   background-color: var(--basic-white);
-  background-image: url(/images/icons/close.svg);
+  background-image: url("/images/icons/close.svg");
   background-repeat: no-repeat;
   background-position: center;
   border: none;
