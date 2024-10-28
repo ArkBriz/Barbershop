@@ -320,5 +320,37 @@
         </section>
       </div>
     </footer>
+
+    <!-- Delete class "modal-close" to open modal block -->
+    <div class="modal-wrapper modal-close">
+      <div class="modal modal-login">
+        <h2 class="modal-title">Личный кабинет</h2>
+        <button class="modal-button-close"></button>
+
+        <form class="login-form" action="https://echo.htmlacademy.ru">
+          <div class="field-group">
+            <label class="visually-hidden" for="login">Ваш логин</label>
+            <input class="field" type="text" id="login" name="login" placeholder="Логин" required>
+          </div>
+          <div class="field-group">
+            <label class="visually-hidden" for="password">Пароль</label>
+            <input class="field" type="password" id="password" name="password" placeholder="Пароль" required>
+          </div>
+
+          <div class="login-recovery">
+            <label class="control-group">
+              <input class="control" type="checkbox" name="remember-me" value="cheched" checked>
+              <span class="control-mark"></span>
+              <span class="control-label">Запомнить меня</span>
+            </label>
+
+            <a class="recovery" href="#">Забыл пароль</a>
+          </div>
+
+          <button class="button" type="submit">Войти</button>
+          <a class="button button-light" href="#">Регистрация</a>
+        </form>
+      </div>
+    </div>
   </body>
 </html>

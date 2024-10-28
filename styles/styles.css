@@ -1314,3 +1314,84 @@ left: -10px;
 .copy a {
   color: var(--special-neutral);
 }
+
+
+/* Modal */
+
+.modal-wrapper {
+  position: fixed;
+  display: flex;
+  width: 100%;
+  height: 100%;
+  background-color: rgb(36, 36, 36, 0.8);
+}
+
+.modal {
+  position: relative;
+  min-width: 400px;
+  margin: auto;
+  padding: 40px;
+  background-color: var(--basic-white);
+
+  color: var(--basic-black);
+}
+
+.modal-close {
+  display: none;
+}
+
+.modal-login {
+  width: 440px;
+}
+
+.modal-title {
+  margin: 0;
+  margin-bottom: 24px;
+
+  font-family: "PT Sans Narrow" ,sans-serif;
+  font-size: 32px;
+  line-height: 110%;
+  text-transform: uppercase;
+}
+
+.modal-button-close {
+  position: absolute;
+  top: 0;
+  right: 0;
+
+  width: 56px;
+  height: 44px;
+  padding: 14px 20px;
+
+  background-color: var(--basic-white);
+  background-image: url(/images/icons/close.svg);
+  background-repeat: no-repeat;
+  background-position: center;
+  border: none;
+  cursor: pointer;
+}
+
+.login-form {
+  display: grid;
+  row-gap: 16px;
+}
+
+.login-form .field {
+  padding: 10px 16px;
+
+  font-size: 16px;
+  line-height: 130%;
+}
+
+.login-recovery {
+  display: flex;
+  justify-content: space-between;
+}
+
+.login-recovery .control-group {
+  margin-bottom: 0;
+}
+
+.recovery {
+  color: var(--basic-black);
+}
