@@ -617,11 +617,35 @@ left: -10px;
 
 .price-fields-container {
   display: flex;
+  justify-content: center;
+  line-height: 140%;
   font-weight: 400;
 }
 
+.price-field-label {
+  display: flex;
+  justify-content: center;
+  margin-right: 5px;
+}
+
 .price-field {
-  max-width: 50px;
+  width: 25px;
+  background-color: transparent;
+  border: none;
+  margin: 0 2px;
+  font-size: 16px;
+  text-align: center;
+  appearance: textfield;
+}
+
+.price-field-label:nth-child(2) .price-field {
+  width: 40px;
+}
+
+.price-field::-webkit-outer-spin-button,
+.price-field::-webkit-inner-spin-button {
+  appearance: none;
+  margin: 0;
 }
 
 .control-group {
