@@ -478,6 +478,7 @@ body {
 }
 
 .appointment-label {
+  position: relative;
   align-self: flex-start;
 
   margin-bottom: 8px;
@@ -485,6 +486,39 @@ body {
 
   line-height: 140%;
   text-transform: uppercase;
+}
+
+.info-icon {
+  position: absolute;
+  margin-left: 4px;
+}
+
+.info-icon:hover svg {
+  fill: #af7842;
+}
+
+.info-icon::before {
+  display: none;
+  position: absolute;
+  content: "Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони";
+  top: -50%;
+  transform: translateX(-50%) translateY(-90%);
+
+  width: 160px;
+  padding: 5px 8px;
+
+  background-color: var(--basic-extra-dark);
+  border-radius: 8px;
+
+  font-size: 14px;
+  line-height: 120%;
+  font-weight: 400;
+  color: var(--basic-white);
+  text-transform: none;
+}
+
+.info-icon:hover::before {
+  display: block;
 }
 
 .name-field {
