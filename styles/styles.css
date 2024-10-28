@@ -44,12 +44,15 @@ img {
 :root {
   --basic-white: #ffffff;
   --basic-black: #000000;
+  --basic-light: #e7e7e7;
   --basic-extra-light: #f6f6f6;
   --basic-dark: #595959;
+  --special-light: #DBB590;
+  --special-dark: #814B18;
   --basic-extra-dark: #242424;
   --basic-neutral: #bdbdbd;
   --special-neutral: #af7842;
-  --special-dark: #814B18;
+  --status-error: #EA5454;
 }
 
 html {
@@ -89,6 +92,36 @@ body {
   text-align: center;
   text-decoration: none;
   text-transform: uppercase;
+  cursor: pointer;
+}
+
+.button-light {
+  background-color: var(--basic-white);
+  color: var(--basic-extra-dark);
+}
+
+.button:hover {
+  background-color: var(--special-dark);
+}
+
+.button-light:hover {
+  background-color: var(--special-light);
+}
+
+.button:focus {
+  background-color: var(--special-dark);
+  outline: 2px solid #DBB590;
+}
+
+.button-light:focus {
+  background-color: var(--special-light);
+  outline: 2px solid #af7842;
+}
+
+.button:disabled,
+.button:hover:disabled {
+  background-color: var(--basic-dark);
+  color: var(--basic-light);
 }
 
 .visually-hidden {
@@ -169,7 +202,29 @@ body {
 }
 
 .user-nav .login-link {
+  padding: 27px 20px;
   padding-left: 38px;
+}
+
+.nav-link:hover {
+  background-color: var(--basic-dark);
+}
+
+.nav-link:hover svg {
+  fill: var(--basic-extra-dark);
+}
+
+.login-link:hover svg {
+  fill: var(--basic-white);
+}
+
+.nav-link:focus {
+  outline: 4px solid #e7e7e7;
+  outline-offset: -4px;
+}
+
+.login-link:focus svg {
+  fill: var(--basic-white);
 }
 
 .navigation-icon {
@@ -386,8 +441,26 @@ body {
   cursor: pointer;
 }
 
-.pag-button-current {
+.pag-button:focus {
+  background-color: var(--special-light);
+  outline: none;
+}
+
+.pag-button:hover {
+  background-color: var(--special-neutral);
+}
+
+.pag-button:active {
+  background-color: var(--special-light);
+  outline: 1px solid #af7842;
+}
+
+.pag-button-current,
+.pag-button-current:hover,
+.pag-button-current:focus {
   background-color: var(--basic-extra-dark);
+  outline: none;
+  cursor: auto;
 }
 
 /* Contacts */
@@ -441,11 +514,6 @@ body {
   margin-right: 16px;
 }
 
-.button-feedback {
-  background-color: var(--basic-white);
-  color: var(--basic-extra-dark);
-}
-
 /* Appointment */
 
 .appointment {
@@ -490,7 +558,17 @@ body {
 
 .info-icon {
   position: absolute;
+  margin-top: 5px;
   margin-left: 4px;
+  padding: 0;
+  background-color: transparent;
+  border: none;
+  border-radius: 50%;
+  line-height: 0;
+}
+
+.info-icon:focus {
+  outline: 2px solid #DBB590;
 }
 
 .info-icon:hover svg {
@@ -502,7 +580,7 @@ body {
   position: absolute;
   content: "Укажите желаемую дату и время и мы свяжемся с вами для подтверждения брони";
   top: -50%;
-  transform: translateX(-50%) translateY(-90%);
+  transform: translateX(-50%) translateY(-100%);
 
   width: 160px;
   padding: 5px 8px;
@@ -514,6 +592,7 @@ body {
   line-height: 120%;
   font-weight: 400;
   color: var(--basic-white);
+  text-align: left;
   text-transform: none;
 }
 
@@ -542,7 +621,22 @@ body {
   color: var(--basic-neutral);
 }
 
+.field:hover {
+  border-color: var(--special-neutral);
+  cursor: pointer;
+}
 
+.field:focus {
+  border-color: var(--special-neutral);
+  outline: 2px solid #DBB590;
+}
+
+.field:disabled,
+.field:disabled:hover {
+  background-color: var(--basic-light);
+  border-color: var(--basic-dark);
+  cursor: auto;
+}
 
 /* Catalog */
 
@@ -660,6 +754,17 @@ left: -10px;
   right: -10px;
 }
 
+.range-toggle:hover {
+  background-color: var(--special-light);
+  cursor: pointer;
+}
+
+.range-toggle:active,
+.range-toggle:focus {
+  background-color: var(--special-light);
+  outline: 3px solid #af7842;
+}
+
 .price-fields-container {
   display: flex;
   justify-content: center;
@@ -766,6 +871,14 @@ left: -10px;
   background-color: var(--basic-extra-dark);
 }
 
+.control-group:hover .control-mark {
+  border-color: var(--special-neutral);
+}
+
+.control:disabled + .control-mark {
+  border-color: var(--basic-neutral);
+}
+
 /* Sorting */
 
 .sorting-container {
@@ -799,8 +912,19 @@ left: -10px;
   appearance: none;
 }
 
+.sorting-select:hover {
+  border-color: var(--special-neutral);
+  cursor: pointer;
+}
+
+.sorting-select:focus {
+  border-color: var(--special-neutral);
+  outline: 2px solid #DBB590;
+}
+
 .view-buttons-container {
   display: flex;
+  align-items: center;
   max-width: 400px;
 }
 
@@ -813,10 +937,27 @@ left: -10px;
 
 .view-button-current {
   background-color: var(--basic-black);
+  cursor: auto;
 }
 
 .view-button-current svg {
   fill: var(--basic-white);
+}
+
+.view-button:hover {
+  background-color: var(--special-light);
+}
+
+.view-button:focus {
+  background-color: var(--special-light);
+  outline: 2px solid #af7842;
+}
+
+.view-button-current:hover,
+.view-button-current:focus {
+  background-color: var(--basic-black);
+  outline: 2px solid #af7842;
+  cursor: auto;
 }
 
 /* Cards */
