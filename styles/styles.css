@@ -417,6 +417,7 @@ body {
 /* Services */
 
 .section-container {
+  position: relative;
   display: flex;
   justify-content: space-between;
   width: 940px;
@@ -430,12 +431,33 @@ body {
   color: var(--basic-extra-dark);
 }
 
+.section-container::before {
+  content: "";
+  position: absolute;
+  top: 40px;
+  bottom: 40px;
+  border-right: 1px dashed #595959;
+}
+
+.section-container:first-of-type::before {
+  left: 470px;
+}
+
+.section-container:last-of-type::before {
+  left: 430px;
+}
+
 .services {
   width: 390px;
   font-family: "PT Sans Narrow", sans-serif;
   font-size: 20px;
   line-height: 140%;
   text-transform: uppercase;
+}
+.services-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
 }
 
 .section-title {
@@ -460,7 +482,17 @@ body {
 }
 
 .service-price {
+  order: 3;
   color: var(--special-neutral);
+}
+
+.services-item::before {
+  content: "";
+  flex-grow: 1;
+  order: 2;
+  margin-right: 16px;
+  margin-left: 16px;
+  border-bottom: 2px dotted #595959;
 }
 
 .button-all {
