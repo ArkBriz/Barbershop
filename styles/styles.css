@@ -357,7 +357,7 @@ body {
   padding-top: 65px;
 
   background-color: var(--basic-black);
-  background-image: url("/images/backgrounds/background-image.jpg");
+  background-image: url("../images/backgrounds/background-image.jpg");
   background-size: 100% auto;
   background-repeat: no-repeat;
 }
